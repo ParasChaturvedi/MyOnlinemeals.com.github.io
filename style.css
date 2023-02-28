@@ -1,0 +1,238 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Logo and image for navigation baar */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#logo:hover{
+    box-shadow: 2px 3px 5px  chocolate;
+}
+/* List Styling for navigation baar */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(208, 125, 70);
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+}
+#home::before{
+    content: "";
+    background:url("img8.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Service section */
+#service{
+    margin: 14px;
+    display: flex;
+}
+.box:hover{
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+.box{
+    border: 2px solid darkgray;
+    margin: 5px 26px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    width: 650px;
+}
+.box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Arial, Helvetica, 'sans-serif';
+
+}
+/* client section  */
+#client-section{
+    font-family: 'Playfair Display', serif;
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('img4.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-size: cover;    
+}
+.client-item:hover{
+    box-shadow: 5px 5px 5px darkgrey;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 164px;
+    padding: 28px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(243, 239, 239);
+}
+/* contacts section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/contact.jpg') no-repeat center center/cover;
+}
+#contact-box input
+{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 9px;
+    box-shadow: 2px 2px;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, 'sans-serif';
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 4px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 5px 2px 6px black;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Playfair Display',serif;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: chocolate;
+    color: aliceblue;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 5px 10px 15px rgba(34, 18, 18, 0.784); 
+}
+.center{
+    text-align: center;
+    padding: 8px;
+}
+.services-cotainers::before{
+    background-image: url('/img7.jpg');
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.2;
+}
+/* for scrolling  */
+html{
+    scroll-behavior: smooth;
+}
